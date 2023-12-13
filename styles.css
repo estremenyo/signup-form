@@ -5,20 +5,22 @@ body {
 
 form {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-between;
+
     flex: 1 1 0;
     border: 2px solid red;
     flex-direction: column;
-    gap: 5rem;
-    padding: 0rem 10rem 0rem 2.5rem;
-}
+    gap: 2rem;
 
+}
+    
 form > div {
     border: 2px solid yellow;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    flex: 1 1 0;
+    padding: 0rem 10rem 0rem 2.5rem;    
 }
 
 h2 {
@@ -39,4 +41,16 @@ button[type="submit"] {
     color: white;
     border-radius: 5px;
     padding: 10px 0px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+div.buttons,
+div.hero-text {
+    background-color: lightgray;
+}
+
+a {
+    color: green;
+    align-self: flex-start;
 }
