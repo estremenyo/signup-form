@@ -5,17 +5,15 @@
 body {
     display: flex;
     height: 100vh;
+    box-sizing: border-box;
 }
 
 form {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
     flex: 1 1 0;
     border: 2px solid red;
     flex-direction: column;
-
-
 }
     
 form > div {
@@ -24,7 +22,24 @@ form > div {
     flex-direction: column;
     gap: 1.5rem;
     flex: 1 1 0;
-    padding: 0rem 10rem 0rem 2.5rem;    
+    padding-right: 10rem;
+    padding-left: 2.5rem;
+}
+
+.hero-text {
+    justify-content: flex-end;
+    padding-bottom: 2.5rem;
+}
+
+.fields {
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.buttons {
+    justify-content: flex-start;
+    padding-top: 1.25rem;
 }
 
 h2 {
@@ -44,7 +59,7 @@ button[type="submit"] {
     background-color: var(--actiongreen);
     color: white;
     border-radius: 5px;
-    padding: 10px 0px;
+    padding: 10px 40px;
     font-weight: bold;
     align-self: flex-start;
 }
@@ -57,4 +72,16 @@ div.hero-text {
 a {
     color: var(--actiongreen);
     align-self: flex-start;
+}
+
+
+label {
+    text-transform: uppercase;
+    font-size: 0.667rem;
+}
+
+div.fieldrow {
+    display: flex;
+    border: 2px solid lime;
+    flex-wrap: wrap;
 }
