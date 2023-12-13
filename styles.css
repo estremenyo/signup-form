@@ -2,10 +2,16 @@
     --actiongreen: rgb(89, 109, 72);
 }
 
+@font-face {
+    font-family: norse-bold;
+    src: url(./Norse-Bold.otf);
+}
+
 body {
     display: flex;
     height: 100vh;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 form {
@@ -93,4 +99,34 @@ div.fieldrow {
 input {
     border-color: #E5E7EB;
     border-radius: 3px;
+}
+
+.main-img {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.img-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    gap: 1vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: norse-bold;
+    font-size: 5rem;
+    justify-content: center;
+    align-items: center;
+    top: 33vh;
+    width: 100%;
+
+    color: white;
+    padding: 1.25rem 0;
+}
+
+img[src="odin-lined.png"] {
+    width: 6rem;
 }
