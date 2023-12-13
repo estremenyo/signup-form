@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0;
+    border: 2px solid red;
+    flex-direction: column;
+}
