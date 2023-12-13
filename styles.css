@@ -114,7 +114,7 @@ input {
 .overlay {
     position: absolute;
     display: flex;
-    gap: 1vw;
+    gap: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
     font-family: norse-bold;
     font-size: 5rem;
@@ -129,4 +129,20 @@ input {
 
 img[src="odin-lined.png"] {
     width: 6rem;
+}
+
+input:focus {
+    border: 3px solid blue;
+}
+
+.credits {
+    position: absolute;
+    top: 90vh;
+    left: 15vh;
+    color: white;
+}
+
+.credits a,
+.credits a:visited {
+    color: white;
 }
