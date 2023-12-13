@@ -84,4 +84,11 @@ div.fieldrow {
     display: flex;
     border: 2px solid lime;
     flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
