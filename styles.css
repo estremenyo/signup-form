@@ -1,3 +1,7 @@
+:root {
+    --actiongreen: rgb(89, 109, 72);
+}
+
 body {
     display: flex;
     height: 100vh;
@@ -10,7 +14,7 @@ form {
     flex: 1 1 0;
     border: 2px solid red;
     flex-direction: column;
-    gap: 2rem;
+
 
 }
     
@@ -37,7 +41,7 @@ em {
 }
 
 button[type="submit"] {
-    background-color: green;
+    background-color: var(--actiongreen);
     color: white;
     border-radius: 5px;
     padding: 10px 0px;
@@ -51,6 +55,6 @@ div.hero-text {
 }
 
 a {
-    color: green;
+    color: var(--actiongreen);
     align-self: flex-start;
 }
