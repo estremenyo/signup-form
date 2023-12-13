@@ -6,7 +6,7 @@ body {
 form {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex: 1 1 0;
     border: 2px solid red;
     flex-direction: column;
@@ -15,4 +15,17 @@ form {
 
 form > * {
     border: 2px solid yellow;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+#hero-text > * {
+    font-weight: bold;
 }

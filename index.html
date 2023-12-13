@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
-    <link rel="style    sheet" href="meyer2.css">
+    <link rel="stylesheet" href="meyer2.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,18 +12,36 @@
 
 <form action="" method="get">
     <div id="hero-text">
-        This is not a real online service!
+        <h2>This is not a real online service!
+            You know you need something like this in your life to help you realize your deepest dreams.
+            Sign up <em>now</em> to get started.</h2>
+        <h2>You <em>know</em> you want to.</h2>
+
     </div>
     <div id="fields">
-        <h2>Let's do this!</h2>
-        <label for="firstname">First Name:</label>
-        <input type="text" name="firstname" id="firstname" placeholder="John" required>
+        <h2>Let's go!</h2>
+        <div class="fieldrow">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" placeholder="John" required>
 
-        <label for="lastname">Last Name:</label>
-        <input type="text" name="lastname" id="lastname" placeholder="Smith" required>
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Smith" required>
+        </div>
+        <div class="fieldrow">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="tel">Phone Number</label>
+            <input type="tel" name="tel" id="tel" required>
+        </div>
+        <div class="fieldrow">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="confirm-password" name="confirm-password" id="confirm-password" required>
+        </div>
     </div>
     <div class="buttons">
-        <button type="submit">Let's go!</button>
+        <button type="submit">Create Account</button>
         <p>Already have an account? <a href="">Log in</a></p>
     </div>
 </form>
