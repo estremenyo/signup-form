@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
-    <link rel="stylesheet" href="meyer2.css">
+    <link rel="style    sheet" href="meyer2.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <img src="halie-west-25xggax4bSA-unsplash.jpg" alt="">
 
 <form action="" method="get">
-    <div>
+    <div id="hero-text">
         This is not a real online service!
     </div>
-    <label for="firstname">First Name:</label>
-    <input type="text" name="firstname" id="firstname" placeholder="John" required>
+    <div id="fields">
+        <h2>Let's do this!</h2>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname" placeholder="John" required>
 
-    <label for="lastname">Last Name:</label>
-    <input type="text" name="lastname" id="lastname" placeholder="Smith" required>
-    <button type="submit">Let's go! </button>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Smith" required>
+    </div>
+    <div class="buttons">
+        <button type="submit">Let's go!</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+    </div>
 </form>
 
 </body>

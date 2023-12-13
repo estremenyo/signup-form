@@ -10,4 +10,9 @@ form {
     flex: 1 1 0;
     border: 2px solid red;
     flex-direction: column;
+    gap: 50px;
+}
+
+form > * {
+    border: 2px solid yellow;
 }
