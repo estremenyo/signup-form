@@ -38,10 +38,8 @@ form > div {
 }
 
 .fields {
-    justify-content: center;
-    padding-top: 1.25rem;
+    padding-top: 1.5rem;
     padding-bottom: 1.25rem;
-    flex-grow: 1;
 }
 
 .buttons {
@@ -87,7 +85,7 @@ a {
 }
 
 
-label {
+label.label-name {
     text-transform: uppercase;
     font-size: 0.667rem;
     letter-spacing: 0.1rem;
@@ -95,27 +93,31 @@ label {
     font-weight: 900;
 }
 
+.error {
+    border-color: red;
+}
+
+input[type="password"] + .label-helper::after {
+    content: "* Passwords do not match";
+    font-size: 0.6rem;
+    color: red;
+}
+
 div.fieldrow {
     display: flex;
     flex-wrap: wrap;
+    gap: 4rem;
 }
 
 .field {
     display: flex;
     flex-direction: column;
-    padding-right: 5em; 
-}
 
-.field::after {
-    content: "* Passwords do not match";
-    white-space: pre;
-    color: red;
-    font-size: 0.75rem;
 }
 
 input {
     border-color: #E5E7EB;
-    border-radius: 3px;
+    border-radius: 4px;
     outline: 0;
     box-shadow: 0;
     border: 2px solid lightgray;
@@ -130,12 +132,16 @@ input:focus {
     box-shadow: 2px 2px 10px -5px black;
 }
 
+input:invalid+label{
+    content: "Lmao";
+}
+
 .img-container {
     position: relative;
 }
 
 .main-img {
-
+    
     display: block;
 }
 
@@ -161,7 +167,7 @@ img[src="odin-lined.png"] {
 
 .credits {
     position: absolute;
-    top: 800px;
+    top: 930px;
     width: 100%;
     text-align: center;
     color: white;
@@ -171,4 +177,3 @@ img[src="odin-lined.png"] {
 .credits a:visited {
     color: white;
 }
-
